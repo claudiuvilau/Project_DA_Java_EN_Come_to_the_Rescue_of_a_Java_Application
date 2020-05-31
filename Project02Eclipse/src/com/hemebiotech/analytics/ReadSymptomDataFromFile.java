@@ -11,6 +11,9 @@ import java.util.List;
 =======
  * 
  * 
+<<<<<<< HEAD
+>>>>>>> stash
+=======
 >>>>>>> stash
  * Simple brute force implementation
  *
