@@ -7,6 +7,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+<<<<<<< HEAD
+=======
+ * 
+ * 
+>>>>>>> stash
  * Simple brute force implementation
  *
  */

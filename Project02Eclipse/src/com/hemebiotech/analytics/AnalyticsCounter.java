@@ -17,6 +17,7 @@ public class AnalyticsCounter {
 												// of the
 			List<String> myTxt_symptoms = new ArrayList<String>(); // create the list of the symptoms from the .txt
 
+<<<<<<< HEAD
 			ListTxt list_from_txt = new ListTxt(); // object ListTxt - class ListTxt
 			myTxt_symptoms = list_from_txt.create_list(myTxt_symptoms, filepath_in); // list created
 
@@ -26,6 +27,13 @@ public class AnalyticsCounter {
 			MapTxt map_txt = new MapTxt(); // object MapTxt - class MapTxt
 			list_ordered = map_txt.create_list_count(list_ordered, myTxt_symptoms); // end counts of the occurrences
 			list_ordered = map_txt.order_list(list_ordered); // sort the list by key, so by symptom
+=======
+		AnalyticsCounter analyticsCounter = new AnalyticsCounter();
+		String filepath_in = "Project02Eclipse/symptoms.txt"; // the path of the file .txt of symptoms and the name
+		List<String> myTxt_symptoms = new ArrayList<String>(); // create the list of the symptoms from the .txt
+		ReadSymptomDataFromFile readDataFromFile = new ReadSymptomDataFromFile(filepath_in);
+		myTxt_symptoms = readDataFromFile.GetSymptoms();
+>>>>>>> stash
 
 			WriteTxt wrt_txt = new WriteTxt(); // object WriteTxt - class WriteTxt
 			wrt_txt.write_txt(list_ordered, filepath_out); // create the file of the results : result.txt
