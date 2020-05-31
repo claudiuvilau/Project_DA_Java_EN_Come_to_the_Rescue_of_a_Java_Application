@@ -10,7 +10,6 @@ import java.util.List;
  * <<<<<<< HEAD =======
  * 
  * 
- * 
  * <<<<<<< HEAD >>>>>>> stash ======= >>>>>>> stash Simple brute force
  * implementation
  *
