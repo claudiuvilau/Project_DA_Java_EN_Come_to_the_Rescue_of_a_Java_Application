@@ -13,10 +13,9 @@ public class AnalyticsCounter {
 		ReadSymptomDataFromFile readDataFromFile = new ReadSymptomDataFromFile(filepath_in);
 		myTxt_symptoms = readDataFromFile.GetSymptoms();
 
-		List<String> liste = new ArrayList<String>();
 		SortList sortlist_obj = new SortList();
-		liste = sortlist_obj.sort_list(liste);
-		System.out.println(liste);
+		myTxt_symptoms = sortlist_obj.sort_list(myTxt_symptoms);
+		System.out.println("Ma liste triée est : " + myTxt_symptoms);
 
 	}
 
