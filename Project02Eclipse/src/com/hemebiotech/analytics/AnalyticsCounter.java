@@ -16,13 +16,13 @@ public class AnalyticsCounter {
 		ReadSymptomDataFromFile readDataFromFile = new ReadSymptomDataFromFile(filepath_in);
 		myTxt_symptoms = readDataFromFile.GetSymptoms();
 
-		SortList sortlist_obj = new SortList();
-		myTxt_symptoms = sortlist_obj.sort_list(myTxt_symptoms);
-
 		Map<String, Integer> list_ordered = new HashMap<String, Integer>();
 		OccurrenceList list_from_txt = new OccurrenceList(myTxt_symptoms);
 
 		list_ordered = list_from_txt.occurrence_list(myTxt_symptoms, list_ordered);
+
+		SortList sortlist_obj = new SortList();
+		list_ordered = sortlist_obj.sort_list(list_ordered);
 
 		System.out.println("My list with the occurrence is : " + list_ordered);
 

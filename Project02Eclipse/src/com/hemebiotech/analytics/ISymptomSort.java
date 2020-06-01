@@ -3,7 +3,7 @@
  */
 package com.hemebiotech.analytics;
 
-import java.util.List;
+import java.util.Map;
 
 /**
  * @author HP
@@ -11,6 +11,6 @@ import java.util.List;
  */
 public interface ISymptomSort {
 
-	List<String> sort_list(List fonction_list);
+	Map<String, Integer> sort_list(Map<String, Integer> fonction_list);
 
 }
