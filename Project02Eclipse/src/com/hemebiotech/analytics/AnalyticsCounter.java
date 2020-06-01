@@ -1,7 +1,9 @@
 package com.hemebiotech.analytics;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class AnalyticsCounter {
 
@@ -16,14 +18,13 @@ public class AnalyticsCounter {
 
 		SortList sortlist_obj = new SortList();
 		myTxt_symptoms = sortlist_obj.sort_list(myTxt_symptoms);
-		System.out.println("Ma liste triée est : " + myTxt_symptoms);
 
- 		List<String> myTxt_symptoms = new ArrayList<String>();
 		Map<String, Integer> list_ordered = new HashMap<String, Integer>();
 		OccurrenceList list_from_txt = new OccurrenceList(myTxt_symptoms);
 
 		list_ordered = list_from_txt.occurrence_list(myTxt_symptoms, list_ordered);
 
+		System.out.println("My list with the occurrence is : " + list_ordered);
 
 	}
 
