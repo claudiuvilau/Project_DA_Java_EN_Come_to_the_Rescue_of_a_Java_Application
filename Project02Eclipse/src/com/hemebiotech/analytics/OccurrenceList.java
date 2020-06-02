@@ -6,10 +6,19 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * 
+ * @author Claudiu VILAU
+ *
+ */
 public class OccurrenceList implements ISymptomOccurrence {
 
 	private List<String> fonction_list = new ArrayList<String>();
 
+	/**
+	 * 
+	 * @param fonction_list
+	 */
 	public OccurrenceList(List fonction_list) {
 		this.fonction_list = fonction_list;
 	}

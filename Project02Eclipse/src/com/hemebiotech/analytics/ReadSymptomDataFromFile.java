@@ -7,11 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * <<<<<<< HEAD =======
  * 
- * 
- * <<<<<<< HEAD >>>>>>> stash ======= >>>>>>> stash Simple brute force
- * implementation
+ * @author Claudiu VILAU
  *
  */
 public class ReadSymptomDataFromFile implements ISymptomReader {
@@ -20,8 +17,7 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 
 	/**
 	 * 
-	 * @param filepath a full or partial path to file with symptom strings in it,
-	 *                 one per line
+	 * @param filepath
 	 */
 	public ReadSymptomDataFromFile(String filepath) {
 		this.filepath = filepath;
@@ -48,5 +44,4 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 
 		return result;
 	}
-
 }

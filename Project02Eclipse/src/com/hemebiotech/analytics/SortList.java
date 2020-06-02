@@ -4,6 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
+/**
+ * 
+ * @author Claudiu VILAU
+ *
+ */
 public class SortList implements ISymptomSort {
 
 	@Override

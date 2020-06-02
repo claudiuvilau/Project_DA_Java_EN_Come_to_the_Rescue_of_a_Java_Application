@@ -5,14 +5,19 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * 
+ * @author Claudiu VILAU
+ *
+ */
 public class AnalyticsCounter {
 
 	public static void main(String args[]) {
 
 		AnalyticsCounter analyticsCounter = new AnalyticsCounter();
 
-		String filepath_in = "Project02Eclipse/symptoms.txt"; // the path of the file .txt of symptoms and the name
-		List<String> myTxt_symptoms = new ArrayList<String>(); // create the list of the symptoms from the .txt
+		String filepath_in = "Project02Eclipse/symptoms.txt";
+		List<String> myTxt_symptoms = new ArrayList<String>();
 		ReadSymptomDataFromFile readDataFromFile = new ReadSymptomDataFromFile(filepath_in);
 		myTxt_symptoms = readDataFromFile.GetSymptoms();
 
@@ -32,6 +37,10 @@ public class AnalyticsCounter {
 		success(filepath_out);
 	}
 
+	/**
+	 * 
+	 * @param filepath_out
+	 */
 	private static void success(String filepath_out) {
 		System.out.println("The file " + filepath_out + " is generated with success ! ");
 
