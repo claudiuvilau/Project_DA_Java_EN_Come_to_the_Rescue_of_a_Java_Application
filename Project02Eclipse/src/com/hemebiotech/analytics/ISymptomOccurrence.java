@@ -5,6 +5,7 @@ import java.util.Map;
 
 public interface ISymptomOccurrence {
 	/**
+	 * create a HashMap with the symptoms and the occurrences
 	 * 
 	 * @param myTxt_symptoms2
 	 * @param list_ordered2

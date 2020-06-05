@@ -7,6 +7,7 @@ import java.util.Map;
 
 public interface ISymptomSort {
 	/**
+	 * sort the list
 	 * 
 	 * @param fonction_list
 	 * @return

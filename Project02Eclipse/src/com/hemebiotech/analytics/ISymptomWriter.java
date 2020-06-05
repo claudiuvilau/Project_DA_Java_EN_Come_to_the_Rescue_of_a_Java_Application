@@ -5,6 +5,7 @@ import java.util.Map;
 
 public interface ISymptomWriter {
 	/**
+	 * write in the file
 	 * 
 	 * @param fonction_list_map
 	 * @return
